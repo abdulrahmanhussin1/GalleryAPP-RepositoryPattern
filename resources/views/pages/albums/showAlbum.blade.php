@@ -48,11 +48,11 @@
                     @else
                         @foreach ($images as $image)
                             <div class="col-md-3">
-                                <div class="card">
+                                <div class="card mt-5 " style="width: 300px; height: 400px;" >
                                     <img src="{{ asset("storage/$image->image") }}" alt="image.png"
-                                        class="card-img-top gallery-img">
-                                    <div class="card-body">
-                                        <p class="small">{{ 'Image Name : ' }}<strong class="small"
+                                        class="card-img-top gallery-img" tyle="height: 75%; object-fit: cover;">
+                                        <div class="card-body" style="height: 25%;">
+                                            <p class="small">{{ 'Image Name : ' }}<strong class="small"
                                                 class="card-title">{{ $image->imageName }}</strong></p>
                                         <p class="small">{{ 'Album Name : ' }} <strong
                                                 class="small">{{ $image->album->albumName }}</strong></p>

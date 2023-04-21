@@ -16,10 +16,10 @@
                         @foreach ($images as $image)
                             <!-- Gallery items go here -->
                             <div class="col-md-3">
-                                <div class="card">
+                                <div class="card mt-5 " style="width: 300px; height: 400px;" >
                                     <img src="{{ asset("storage/$image->image") }}" alt="Image 1"
-                                        class="card-img-top gallery-img">
-                                    <div class="card-body">
+                                        class="card-img-top gallery-img" style="height: 75%; object-fit: cover;">
+                                    <div class="card-body" style="height: 25%;">
                                         <h5 class="card-title">{{ $image->imageName }}</h5>
                                         <a href="{{ route('albums.show', $image->album->id) }}" class="small">
                                             album:<strong>{{ $image->album->albumName }}</strong></a>

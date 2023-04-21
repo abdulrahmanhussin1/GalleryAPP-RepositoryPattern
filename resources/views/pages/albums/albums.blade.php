@@ -49,10 +49,10 @@
                     <!-- Gallery items go here -->
                     @foreach ($albums as $album)
                         <div class="col-md-4">
-                            <div class="card">
-                                <img src="{{ asset('storage/emptyalbum.png') }} "alt="image.png" class="card-img-top gallery-img">
+                            <div class="card mt-5 " style="width: 300px; height: 400px;" >
+                                <img src="{{ asset('storage/emptyalbum.png') }} "alt="image.png" class="card-img-top gallery-img" style="height: 75%; object-fit: cover;">
 
-                                <div class="card-body">
+                                <div class="card-body" style="height: 25%;">
                                     <a href="{{ route('albums.show', $album->id) }}"
                                         class="card-title">{{ $album->albumName }}</a>
                                 </div>
